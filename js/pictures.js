@@ -44,6 +44,7 @@ var createDomElement = function (el) {
   picElement.querySelector('img').setAttribute('src', el.url);
   picElement.querySelector('span.picture-likes').textContent = el.likes;
   picElement.querySelector('span.picture-comments').textContent = el.comments;
+  return picElement;
 };
 // Отрисовываем DOM-элементы в блок .pictures
 var renderDomElements = function () {

@@ -41,9 +41,9 @@ var pictureTemplate = document.querySelector('#picture-template');
 var pictureTemplateContent = pictureTemplate.content ? pictureTemplate.content : pictureTemplate;
 var createDomElement = function (el) {
   var picElement = pictureTemplateContent.cloneNode(true);
-  picElement.querySelector('img').setAttribute('src', picDescArr[el].url);
-  picElement.querySelector('span.picture-likes').textContent = picDescArr[el].likes;
-  picElement.querySelector('span.picture-comments').textContent = picDescArr[el].comments;
+  picElement.querySelector('img').setAttribute('src', el.url);
+  picElement.querySelector('span.picture-likes').textContent = el.likes;
+  picElement.querySelector('span.picture-comments').textContent = el.comments;
 };
 // Отрисовываем DOM-элементы в блок .pictures
 var renderDomElements = function () {

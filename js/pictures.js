@@ -60,9 +60,9 @@ document.querySelector('.upload-overlay').classList.add('hidden');
 // Заполняем и показываем элемент .gallery-overlay
 var fillAndShowGalleryOverlay = function () {
   var galleryOverlay = document.querySelector('.gallery-overlay');
-  galleryOverlay.querySelector('gallery-overlay-image').setAttribute('src', picDescArr[0].url);
-  galleryOverlay.querySelector('likes-count').textContent = picDescArr[0].likes;
-  galleryOverlay.querySelector('comments-count').textContent = picDescArr[0].comments;
+  galleryOverlay.querySelector('.gallery-overlay-image').setAttribute('src', picDescArr[0].url);
+  galleryOverlay.querySelector('.likes-count').textContent = picDescArr[0].likes;
+  galleryOverlay.querySelector('.comments-count').textContent = picDescArr[0].comments;
   galleryOverlay.classList.remove('hidden');
 };
 fillAndShowGalleryOverlay();
